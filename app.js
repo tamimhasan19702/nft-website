@@ -19,3 +19,15 @@ for(let i = 0; i < wishlistBtn.length; i++){
    eleToggleFunc(this);
   });
 }
+
+// go-to top functionality
+
+const goTopBtn = document.querySelector("[data-go-top]");
+
+window.addEventListener("scroll", function(){
+  if(this.window.scrollY  > 800){
+    goTopBtn.classList.add("active");
+  }else{
+    goTopBtn.classList.remove("active");
+  }
+})
